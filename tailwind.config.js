@@ -14,7 +14,10 @@ module.exports = {
       },
       fontFamily: {
         sora: ["var(--font-sora)", "sans-serif"]
-      }
+      },
+      screens: {
+        'xl': '1440px',
+      },
     },
   },
   plugins: [],
