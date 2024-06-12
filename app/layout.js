@@ -1,8 +1,10 @@
 import "./globals.css";
-
-//fonts
+// import Nav from "@/components/Nav";
+// import Header from "@/components/Header";
+// import TopLeftImg from "@/components/TopLeftImg";
+import MotionWrapper from "@/components/MotionWrapper";
 import { Sora } from "next/font/google";
-
+ 
 //font settings
 const sora = Sora({
   subsets: ["latin"],
@@ -10,10 +12,6 @@ const sora = Sora({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
-//components
-import Nav from "@/components/Nav";
-import Header from "@/components/Header";
-import TopLeftImg from "@/components/TopLeftImg";
 
 export const metadata = {
   title: "Create Next App",
@@ -24,13 +22,33 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className={`page bg-black text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
-          <TopLeftImg />
-          <Nav />
-          <Header />
-          {children}
-        </div>
+          <div className={`page bg-black text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
+        <MotionWrapper>
+            {/* <TopLeftImg />
+            <Nav />
+            <Header /> */}
+            {children}
+        </MotionWrapper>
+          </div>
       </body>
     </html>
   );
 }
+
+// import '../styles/globals.css';
+// import Layout from "../ components/Layout";
+// import Transition from "../components/Transition";
+
+// import { useRouter } from 'next/router';
+// import { AnimatePresence, motion } from 'framer-motion';
+// function MyApp({ Component, pageProps }) {
+// const router = useRouter();
+// return(
+// < Layout>
+// <AnimatePresence mode='wait'>
+// <motion.div key={router.route} className='h-full'>
+// <Transition />
+// <Component {...pageProps} />
+// </motion.div>
+// </AnimatePresence>
+// </Layout>)}

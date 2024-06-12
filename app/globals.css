@@ -17,7 +17,7 @@
 } */
 @layer base {
   body {
-    @apply bg-[rgb(0,0,0)] font-sans text-white;
+    @apply bg-[rgb(0,0,0)] font-sans text-white  overflow-hidden;
   }
 
   .page {
@@ -25,7 +25,8 @@
   }
 }
 
-@layer components {
-
+@layer utilities {
+  .disabled-link {
+    @apply pointer-events-none opacity-50 cursor-not-allowed;
+  }
 }
-
