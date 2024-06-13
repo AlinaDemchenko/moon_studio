@@ -18,7 +18,15 @@ module.exports = {
       screens: {
         'xl': '1440px',
       },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
+      },
+    },
+    container: {
+      padding: {
+        DEFAULT: '15px',
+      },
     },
   },
-  plugins: [],
+    plugins: [],
 };
