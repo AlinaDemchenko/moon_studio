@@ -17,8 +17,8 @@ export default function Home() {
             animate="show"
             exit="hidden"
           >
-            Crafting <span className="text-amber-300">Digital</span> <br />
-            <span className="text-amber-300">Dreams</span> into Reality
+            Crafting <span className="text-amber-300 z-50">Digital</span> <br />
+            <span className="text-amber-300  z-50">Dreams</span> into Reality
           </motion.h1>
           <motion.p
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
