@@ -29,7 +29,7 @@ function Nav() {
 
   return (
     <nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-11 xl:max-w-md xl:h-screen">
-      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-20 xl:h-max py-8 bg-neutral-700/60 text-neutral-500 text-3xl xl:text-xl xl:rounded-full">
+      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-16 md:h-20 xl:h-max py-8 bg-neutral-700/60 text-neutral-500 text-2xl md:text-3xl xl:text-xl xl:rounded-full">
         {navData.map((link, idx) => ( 
           <Link href={link.path} key={idx} className={`${link.path === pathname &&  "text-white"} group relative flex items-center hover:text-white transition-all`}>
             {/* tooltip */}

@@ -16,6 +16,7 @@ module.exports = {
         sora: ["var(--font-sora)", "sans-serif"]
       },
       screens: {
+        "md": "768px",
         'xl': '1440px',
       },
       animation: {
