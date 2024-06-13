@@ -32,15 +32,12 @@ export default function Home() {
             drive measurable results. Let&apos;s embark on a journey to elevate
             your online presence together.
           </motion.p>
-          <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
-          </div>
           <motion.div
             variants={fadeIn("down", 1.4 )}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden opacity-60 xl:flex"
+            className="xl:opacity-60 flex"
           >
             <ProjectsBtn />
           </motion.div>
