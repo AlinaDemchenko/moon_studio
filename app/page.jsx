@@ -34,8 +34,7 @@ export default function Home() {
             exit="hidden"
           >
             Welcome to the MoonStudio, where we are crafting beautiful,
-            responsive websites that not only captivate your audience but also
-            drive measurable results. Let&apos;s embark on a journey to elevate
+            responsive websites that drive measurable results. Let&apos;s embark on a journey to elevate
             your online presence together.
           </motion.p>
           <motion.div
