@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="h-full xl:pl-[150px]">
       <div className="w-full h-full bg-gradient-to-l from-stone-800 to-black">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center pt-[122px] md:pt-[172px] xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
             variants={fadeIn("down", headerMotionDuration)}
             initial="hidden"
@@ -33,16 +33,16 @@ export default function Home() {
             animate="show"
             exit="hidden"
           >
-            Welcome to the MoonStudio, where we are crafting beautiful,
-            responsive websites that drive measurable results. Let&apos;s embark on a journey to elevate
-            your online presence together.
+            Welcome to the MoonStudio, where we launch beautiful,
+            responsive websites that drive measurable results. Join us on a journey to elevate
+            your online presence to new heights.
           </motion.p>
           <motion.div
             variants={fadeIn("down", btnMotionDuration)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="xl:opacity-60 flex"
+            className="flex mb-[70px] md:mb-20 xl:mb-[85px]"
           >
             <ProjectsBtn />
           </motion.div>

@@ -17,7 +17,7 @@ function Transition({ children }) {
     <AnimatePresence mode="wait ">
       <motion.div key={path} className="h-full">
         <motion.div
-          className="fixed top-0 bottom-0 right-full h-screen w-screen z-30 bg-amber-300"
+          className="fixed top-0 bottom-0 right-full h-screen w-screen z-40 bg-amber-300"
           variants={transitionVariants}
           animate="animate"
           transition={{
@@ -27,7 +27,7 @@ function Transition({ children }) {
           }}
         ></motion.div>
          <motion.div
-          className="fixed top-0 bottom-0 right-full h-screen w-screen z-20 bg-amber-400"
+          className="fixed top-0 bottom-0 right-full h-screen w-screen z-30 bg-amber-400"
           variants={transitionVariants}
           animate="animate"
           transition={{
@@ -37,7 +37,7 @@ function Transition({ children }) {
           }}
         ></motion.div>
          <motion.div
-          className="fixed top-0 bottom-0 right-full h-screen w-screen z-10 bg-amber-500"
+          className="fixed top-0 bottom-0 right-full h-screen w-screen z-20 bg-amber-500"
           variants={transitionVariants}
           animate="animate" 
           transition={{
