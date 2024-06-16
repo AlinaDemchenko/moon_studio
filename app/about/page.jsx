@@ -131,15 +131,17 @@ function About() {
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
-                <div key={itemIndex}>
-                  <div>{item.title}</div>
+                <div key={itemIndex} className="flex flex-1 flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
+                  <div className="font-light mb-2 md:mb-0 ">{item.title}</div>
                   <div className="hidden xl:flex">- </div>
                   <div>{item.stage}</div>
-                  {item.icons?.map((icon, itemIndex) => {
-                    return (
-                      <div key={itemIndex}>{React.createElement(icon)}</div>
-                    );
-                  })}
+                  <div className="flex gap-x-4">
+                    {item.icons?.map((icon, itemIndex) => {
+                      return (
+                        <div key={itemIndex} className="text-2xl text-white">{React.createElement(icon)}</div>
+                      );
+                    })}
+                  </div>
                 </div>
               );
             })}
