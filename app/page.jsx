@@ -19,7 +19,8 @@ export default function Home() {
       <TopLeftImg />
       <main className="h-full xl:pl-[150px]">
         <div className="w-full h-full bg-gradient-to-l from-stone-800 to-black">
-          <div className="text-center flex flex-col justify-center pt-[118px] md:pt-[168px] xl:pt-[132px] xl:text-left h-full container mx-auto">
+          <div className="text-center flex flex-col justify-center pt-[118px] md:pt-[168px] xl:pt-[132px] xl:text-left h-full container mx-auto
+          ">
             <motion.h1
               variants={fadeIn("down", headerMotionDuration)}
               initial="hidden"
@@ -38,7 +39,7 @@ export default function Home() {
               animate="show"
               exit="hidden"
             >
-              Welcome to the MoonStudio, where we launch beautiful, responsive
+              Welcome to the Moon Studio, where we launch beautiful, responsive
               websites that drive measurable results. Join us on a journey to
               elevate your online presence to new heights.
             </motion.p>
