@@ -37,7 +37,7 @@
   }
 
   .page-container{
-    @apply xl:px-36 xl:pt-48;
+    @apply pt-48 px-11 md:px-32 md:pt-40 xl:px-36 xl:pt-48;
   }
 }
 
