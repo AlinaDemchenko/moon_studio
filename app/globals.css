@@ -17,7 +17,11 @@
 } */
 @layer base {
   body {
-    @apply bg-[rgb(0,0,0)] font-sans text-white  overflow-hidden;
+    @apply bg-[rgb(0,0,0)] font-sans text-white overflow-hidden;
+  }
+
+  main{
+    /* @apply pt-[140px] md:pt-[168px] xl:pt-[200px] xl:pl-[150px]; */
   }
 
   h1 {
@@ -30,6 +34,10 @@
 
   .page {
     @apply w-full h-screen overflow-hidden;
+  }
+
+  .page-container{
+    @apply xl:px-36 xl:pt-48;
   }
 }
 

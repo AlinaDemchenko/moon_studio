@@ -15,22 +15,21 @@ export default function Home() {
   const headerMotionDuration = isMobile ? 0.9 : 1.2;
 
   return (
-    <>
+    <main className="h-full bg-gradient-to-l from-stone-800 to-black">
       <TopLeftImg />
-      <main className="h-full xl:pl-[150px]">
-        <div className="w-full h-full bg-gradient-to-l from-stone-800 to-black">
-          <div className="text-center flex flex-col justify-center pt-[118px] md:pt-[168px] xl:pt-[132px] xl:text-left h-full container mx-auto
-          ">
+      <div className="">
+        <div className="w-full h-full">
+          <div className="text-center flex flex-col justify-center xl:text-left h-full page-container mx-auto">
             <motion.h1
               variants={fadeIn("down", headerMotionDuration)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="drop-shadow-2xl"
+              className="drop-shadow-2xl relative z-20"
             >
-              Crafting <span className="text-amber-300 z-50">Digital</span>{" "}
+              Crafting <span className="text-amber-300">Digital</span>
               <br />
-              <span className="text-amber-300  z-50">Dreams</span> into Reality
+              <span className="text-amber-300">Dreams</span> into Reality
             </motion.h1>
             <motion.p
               className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
@@ -59,7 +58,7 @@ export default function Home() {
           <div className="xl:bg-[url('/home-bg.png')] xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute z-0"></div>
           <ParticlesContainer />
         </div>
-      </main>
-    </>
+      </div>
+    </main>
   );
 }
