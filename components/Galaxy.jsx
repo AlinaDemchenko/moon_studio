@@ -7,7 +7,7 @@ function Galaxy() {
         src="/galaxy.png"
         width="1000" 
         height="1200"
-        alt="circles"
+        alt="galaxy"
         className="w-full h-full "
       />
     </div>
