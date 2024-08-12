@@ -33,7 +33,7 @@
   }
 
   .page-container{
-    @apply pt-[40%] px-11 md:px-32 md:pt-40 xl:px-36 xl:pt-48;
+    @apply pt-36 px-11 max-md:max-h-[600px] md:px-32 md:pt-40 xl:px-36 xl:pt-48;
   }
 }
 

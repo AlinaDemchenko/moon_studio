@@ -47,7 +47,7 @@ export default function Home() {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="flex mb-[70px] md:mb-20 xl:mb-[85px]"
+              className="flex md:mb-20 xl:mb-[85px]"
             >
               <ProjectsBtn />
             </motion.div>
