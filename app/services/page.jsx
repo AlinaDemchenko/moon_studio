@@ -8,7 +8,7 @@ import { fadeIn } from "@/variants";
 
 function Services() {
   return (
-    <main className="h-full py-36 flex items-center page-container max-md:px-3">
+    <main className="h-full py-36 flex items-center md:page-container max-md:px-3">
       <Galaxy />
       <div className="mx-auto container">
         <div className="flex flex-col xl:flex-row gap-x-8">
