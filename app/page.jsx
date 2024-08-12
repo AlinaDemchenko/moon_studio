@@ -19,7 +19,7 @@ export default function Home() {
       <TopLeftImg />
       <div className="">
         <div className="w-full h-full">
-          <div className="text-center flex flex-col justify-center xl:text-left h-full page-container mx-auto">
+          <div className="text-center flex flex-col justify-center xl:text-left h-full page-container overflow-y-clip mx-auto">
             <motion.h1
               variants={fadeIn("down", headerMotionDuration)}
               initial="hidden"

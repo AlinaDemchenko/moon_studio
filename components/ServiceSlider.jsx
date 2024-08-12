@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
 import {
-  RxCrop,
-  RxDesktop,
-  RxPencil2,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-} from "react-icons/rx";
+  MdAddTask,
+  MdCode,
+  MdFormatColorFill,
+  MdAutoStories,
+  MdDvr,
+  MdNorthEast,
+} from "react-icons/md";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
@@ -17,27 +17,27 @@ import "swiper/css/pagination";
 
 const serviceData = [
   {
-    icon: <RxCrop />,
+    icon: <MdAddTask />,
     title: "Branding",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    icon: <RxPencil2 />,
+    icon: <MdFormatColorFill />,
     title: "Design",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    icon: <RxDesktop />,
+    icon: < MdCode />,
     title: "Development",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    icon: <RxReader />,
+    icon: <MdAutoStories />,
     title: "Copywriting",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    icon: <RxRocket />,
+    icon: <MdDvr />,
     title: "SEO",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
@@ -57,7 +57,9 @@ const ServiceSlider = () => {
         },
       }}
       freeMode={true}
-      pagination={{ clickable: true }}
+      pagination={{
+        clickable: true,
+      }}
       modules={[FreeMode, Pagination]}
       className="h-[240px] sm:h-[340px] z-20"
     >
@@ -66,12 +68,14 @@ const ServiceSlider = () => {
           <SwiperSlide key={idx}>
             <div className="h-max rounded-lg bg-white/20 px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-white/30 transition-all duration-300 z-20">
               <div className="text-4xl mb-4 text-amber-300">{item.icon}</div>
-              <div className="mb-8  "> 
+              <div className="mb-8">
                 <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">{item.description}</p> 
+                <p className="max-w-[350px] leading-normal">
+                  {item.description}
+                </p>
               </div>
-              <div className="text-3xl"> 
-                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-amber-300 transition-all duration-300"/>
+              <div className="text-3xl">
+                <MdNorthEast className="group-hover:rotate-45 group-hover:text-amber-300 transition-all duration-300" />
               </div>
             </div>
           </SwiperSlide>

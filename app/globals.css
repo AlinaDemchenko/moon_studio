@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.translate-z-0 {
+  transform: translateZ(0px);
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #fcd34d;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #fcd34d;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 0, 0, 0;
@@ -32,8 +48,8 @@
     @apply w-full h-screen overflow-hidden;
   }
 
-  .page-container{
-    @apply pt-36 px-11 max-md:max-h-[600px] md:px-32 md:pt-40 xl:px-36 xl:pt-48;
+  .page-container {
+    @apply pt-36 px-4 max-md:overflow-y-scroll overflow-x-hidden md:px-32 md:pt-40 xl:px-36 xl:pt-48;
   }
 }
 
