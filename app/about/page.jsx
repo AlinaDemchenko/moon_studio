@@ -108,7 +108,7 @@ function About() {
         <div className="xl:bg-[url('/about-bg.png')] xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute z-0 opacity-60"></div>
       </motion.div>
       <div className="page-container overflow-hidden pb-16 md:pb-20 h-full w-full">
-        <div className="max-md:overflow-y-scroll overflow-x-hidden h-full flex flex-col mx-auto items-center xl:flex-row gap-x-6">
+        <div className="max-xl:overflow-y-scroll overflow-x-hidden h-full flex flex-col mx-auto items-center xl:flex-row gap-x-6">
           <div className="flex-1 flex-col flex justify-center xl:justify-start xl:h-[480px]">
             <motion.h2
               variants={fadeIn("right", 1.2)}

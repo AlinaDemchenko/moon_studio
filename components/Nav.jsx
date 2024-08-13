@@ -15,7 +15,7 @@ export const navData = [
   { name: "home", path: "/", icon: <IoHome /> },
   { name: "about", path: "/about", icon: <IoBarChartSharp /> },
   { name: "services", path: "/services", icon: <IoBuildSharp /> },
-  { name: "works", path: "/works", icon: <IoBriefcase /> },
+  { name: "work", path: "/work", icon: <IoBriefcase /> },
   {
     name: "testimonials",
     path: "/testimonials",

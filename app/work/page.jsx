@@ -1,12 +1,12 @@
 "use client";
 
-import ServiceSlider from "@/components/ServiceSlider";
+import WorkSlider from "@/components/WorkSlider";
 import Asteroid from "@/components/Asteroid";
 import Galaxy from "@/components/Galaxy";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 
-function Services() {
+function Work() {
   return (
     <main className="h-full py-36 flex overflow-hidden pb-16 items-center md:page-container max-md:px-3">
       <Galaxy />
@@ -19,9 +19,9 @@ function Services() {
                 initial="hidden"
                 animate="show"
                 exit="hidden "
-                className="mt-8"
+                className="xl:mt-12"
               >
-                Our Services <span className="text-amber-300">.</span>
+                Our Works  <span className="text-amber-300">.</span>
               </motion.h2>
               <motion.p
                 className="mb-4 max-w-[400px] mx-auto xl:mx-0"
@@ -41,7 +41,7 @@ function Services() {
               animate="show"
               exit="hidden "
             >
-              <ServiceSlider className="relative z-20"/>
+              <WorkSlider  className="relative z-20"/>
             </motion.div>
           </div>
         </div>
@@ -51,4 +51,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Work; 
