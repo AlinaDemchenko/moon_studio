@@ -10,9 +10,9 @@ function Work() {
   return (
     <main className="h-full py-36 flex overflow-hidden pb-16 items-center md:page-container max-md:px-3">
       <Galaxy />
-       <div className="overflow-x-hidden h-full">
+       <div className="overflow-x-hidden h-full mx-auto">
         <div className="mx-auto container overflow-y-scroll">
-          <div className="flex flex-col xl:flex-row gap-x-8">
+          <div className="flex flex-col xl:flex-row gap-x-8 md:pb-5 xl:pb-0">
             <div className="text-center flex flex-col xl:w-[30vw] xl:text-left mb-4 xl:mb-0">
               <motion.h2
                 variants={fadeIn("up", 0.2)}

@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 function ProjectsBtn() {
   return (
     <div className="mx-auto xl:mx-0">
-      <Link href="/works" className="relative z-10 w-[130px] h-[130px] md:w-[160px] md:h-[160px] flex justify-center items-center bg-[url('/circle_frame.png')] bg-cover bg-center bg-no-repeat group">
+      <Link href="/work" className="relative z-10 w-[130px] h-[130px] md:w-[160px] md:h-[160px] flex justify-center items-center bg-[url('/circle_frame.png')] bg-cover bg-center bg-no-repeat group">
         <Image
         src="/circle_text.png"
         width={424}

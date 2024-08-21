@@ -8,9 +8,9 @@ import { fadeIn } from "@/variants";
 
 function Services() {
   return (
-    <main className="h-full py-36 flex overflow-hidden pb-16 items-center md:page-container max-md:px-3">
+    <main className="h-full py-28 md:py-36 flex overflow-hidden pb-16 items-center md:page-container max-md:px-3">
       <Galaxy />
-       <div className="overflow-x-hidden h-full">
+       <div className="overflow-x-hidden h-full mx-auto">
         <div className="mx-auto container overflow-y-scroll">
           <div className="flex flex-col xl:flex-row gap-x-8">
             <div className="text-center flex flex-col xl:w-[30vw] xl:text-left mb-4 xl:mb-0">
