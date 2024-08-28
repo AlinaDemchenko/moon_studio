@@ -117,7 +117,7 @@ function About() {
               exit="hidden"
               className="relative z-20"
             >
-              Moon Studio: Your <span className="text-amber-300">Vision, </span>
+              Moon Studio: <span className="text-amber-300">Your Vision, </span>
               Our Craft
             </motion.h2>
             <motion.p
