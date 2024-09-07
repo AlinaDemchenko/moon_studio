@@ -46,7 +46,7 @@
   }
 
   input {
-    @apply w-full h-[52px] rounded-lg pl-6 capitalize;
+    @apply w-full h-12 xl:h-[52px] rounded-lg pl-6 capitalize;
   }
   input,
   textarea {
@@ -54,7 +54,7 @@
   }
   
   textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full xl:h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 
   button{
@@ -73,5 +73,11 @@
 @layer utilities {
   .disabled-link {
     @apply pointer-events-none opacity-50 cursor-not-allowed;
+  }
+}
+
+@layer components {
+  .form-error {
+    @apply absolute right-0 top-14 w-fit bg-[url('/icons/cross.svg')] bg-contain bg-no-repeat pl-6 text-xs/5 font-extralight tracking-[0.2em] text-[#FF5757];
   }
 }
