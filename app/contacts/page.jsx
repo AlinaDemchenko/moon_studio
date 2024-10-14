@@ -3,6 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import Galaxy from "@/components/Galaxy";
 
 function Contacts() {
   const {
@@ -21,18 +22,19 @@ function Contacts() {
   });
 
   return (
-    <main className="h-full">
-      <div className="page-container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
-        <div className="flex flex-col w-full max-w-[700px]">
-          <motion.h2
+    <main className="page-container py-32 h-full overflow-hidden lg:pt-36 lg:pb-28">
+            <Galaxy />
+      <div className="mx-auto text-center xl:text-left flex items-center justify-center h-full lg:overflow-y-scroll">
+        <div className="flex flex-col w-full lg:h-full xl:h-fit max-w-[700px]">
+          <motion.h1
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-center mb-12"
+            className="secondary-title text-center mb-12"
           >
             Let&apos;s get in<span className="text-amber-300"> Touch!</span>
-          </motion.h2>
+          </motion.h1>
           <motion.form
             variants={fadeIn("up", 0.4)}
             initial="hidden"

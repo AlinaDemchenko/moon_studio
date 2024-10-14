@@ -73,7 +73,7 @@ const WorkSlider = () => {
       {workSlides.slides.map((slide, idx) => {
         return (
           <SwiperSlide key={idx}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer mb-12">
               {slide.images.map((image, index) => {
                 return (
                   <div

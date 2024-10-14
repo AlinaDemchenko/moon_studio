@@ -17,40 +17,45 @@ export default function Home() {
   return (
     <main className="h-full bg-gradient-to-l from-stone-800 to-black">
       <TopLeftImg />
-      <div className="">
         <div className="w-full h-full">
-          <div className="text-center flex flex-col justify-center xl:text-left h-full page-container overflow-y-clip mx-auto">
-            <motion.h1
-              variants={fadeIn("down", headerMotionDuration)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className="drop-shadow-2xl relative z-20"
-            >
-              Crafting <span className="text-amber-300">Digital</span>
-              <br />
-              <span className="text-amber-300">Dreams</span> into Reality
-            </motion.h1>
-            <motion.p
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
-              variants={fadeIn("down", textMotionDuration)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-            >
-              Welcome to the Moon Studio, where we launch beautiful, responsive
-              websites that drive measurable results. Join us on a journey to
-              elevate your online presence to new heights.
-            </motion.p>
-            <motion.div
-              variants={fadeIn("down", btnMotionDuration)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className="flex md:mb-20 xl:mb-[85px]"
-            >
-              <ProjectsBtn />
-            </motion.div>
+          <div className="text-center flex flex-col justify-center xl:text-left h-full page-container overflow-y-hidden mx-auto">
+            <div className="lg:overflow-y-scroll h-full w-full max-lg:flex max-lg:flex-col max-lg:justify-center">
+              <motion.h1
+                variants={fadeIn("down", headerMotionDuration)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="drop-shadow-2xl relative z-20"
+              >
+                Crafting{" "}
+                <span className="text-amber-300">
+                  Digital
+                  <br />
+                  Dreams{" "}
+                </span>
+                into Reality
+              </motion.h1>
+              <motion.p
+                className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+                variants={fadeIn("down", textMotionDuration)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+              >
+                Welcome to the Moon Studio, where we launch beautiful, responsive
+                websites that drive measurable results. Join us on a journey to
+                elevate your online presence to new heights.
+              </motion.p>
+              <motion.div
+                variants={fadeIn("down", btnMotionDuration)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="flex md:mb-20 xl:mb-[85px]"
+              >
+                <ProjectsBtn />
+              </motion.div>
+            </div>
           </div>
         </div>
         <div className="w-[900px] h-full absolute right-[-10%] bottom-0">
@@ -58,7 +63,6 @@ export default function Home() {
           <div className="xl:bg-[url('/home-bg.png')] xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute z-0"></div>
           <ParticlesContainer />
         </div>
-      </div>
     </main>
   );
 }

@@ -14,13 +14,13 @@ function Transition({ children }) {
   const path = usePathname();
 
   return (
-    <AnimatePresence mode="wait ">
+    <AnimatePresence>
       <motion.div key={path} className="h-full">
         <motion.div
           className="fixed top-0 bottom-0 right-full h-screen w-screen z-40 bg-amber-300"
           variants={transitionVariants}
           animate="animate"
-          transition={{
+          transition={{ 
             delay: 0.2,
             duration: 1.1,
             ease: "easeInOut",

@@ -107,19 +107,19 @@ function About() {
       >
         <div className="xl:bg-[url('/about-bg.png')] xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute z-0 opacity-60"></div>
       </motion.div>
-      <div className="page-container overflow-hidden pb-16 md:pb-20 h-full w-full">
-        <div className="max-xl:overflow-y-scroll overflow-x-hidden h-full flex flex-col mx-auto items-center xl:flex-row gap-x-6">
+      <div className="page-container xl:pt-36 overflow-hidden pb-16 md:pb-20 h-full w-full">
+        <div className="max-xl:overflow-y-scroll overflow-x-hidden h-full flex flex-col mx-auto items-center xl:flex-row xl:items-start gap-x-6">
           <div className="flex-1 flex-col flex justify-center xl:justify-start xl:h-[480px]">
-            <motion.h2
+            <motion.h1
               variants={fadeIn("right", 1.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="relative z-20"
+              className="secondary-title relative z-20"
             >
               Moon Studio: <span className="text-amber-300">Your Vision, </span>
               Our Craft
-            </motion.h2>
+            </motion.h1>
             <motion.p
               variants={fadeIn("right", 1.4)}
               initial="hidden"
