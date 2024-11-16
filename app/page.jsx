@@ -18,7 +18,7 @@ export default function Home() {
     <main className="h-full bg-gradient-to-l from-stone-800 to-black">
       <TopLeftImg />
         <div className="w-full h-full">
-          <div className="text-center flex flex-col justify-center xl:text-left h-full page-container overflow-y-hidden mx-auto">
+          <div className="text-center flex flex-col justify-center xl:text-left h-full page-container overflow-y-auto mx-auto max-md:pb-16">
             <div className="lg:overflow-y-scroll h-full w-full max-lg:flex max-lg:flex-col max-lg:justify-center">
               <motion.h1
                 variants={fadeIn("down", headerMotionDuration)}

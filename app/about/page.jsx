@@ -20,6 +20,7 @@ import {
   SiAdobephotoshop,
 } from "react-icons/si";
 import CountUp from "react-countup";
+import { useMediaQuery } from "react-responsive";
 
 const aboutData = [
   {
@@ -93,23 +94,28 @@ const aboutData = [
 ];
 
 function About() {
+  const isMobile = useMediaQuery({ query: "(max-width:767px)" });
   const [index, setIndex] = useState(0);
 
   return (
     <main className="h-full text-center xl:text-left">
       <Galaxy />
-      <motion.div
-        variants={fadeIn("right", 1.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute -bottom-[400px] -left-[150px] h-full w-full z-0"
-      >
-        <div className="xl:bg-[url('/about-bg.png')] xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute z-0 opacity-60"></div>
-      </motion.div>
+      {/* <motion.div */}
+      {!isMobile && (
+        <motion.div
+          variants={fadeIn("right", 1.2)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="hidden xl:flex absolute -bottom-[400px] -left-[150px] h-full w-full z-0"
+        >
+          <div className="xl:bg-[url('/about-bg.png')] xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute z-0 opacity-60"></div>
+        </motion.div>
+      )}
       <div className="page-container xl:pt-36 overflow-hidden pb-16 md:pb-20 h-full w-full">
         <div className="max-xl:overflow-y-scroll overflow-x-hidden h-full flex flex-col mx-auto items-center xl:flex-row xl:items-start gap-x-6">
           <div className="flex-1 flex-col flex justify-center xl:justify-start xl:h-[480px]">
+            {/* <motion.h1 */}
             <motion.h1
               variants={fadeIn("right", 1.2)}
               initial="hidden"
@@ -120,6 +126,7 @@ function About() {
               Moon Studio: <span className="text-amber-300">Your Vision, </span>
               Our Craft
             </motion.h1>
+            {/* <motion.p */}
             <motion.p
               variants={fadeIn("right", 1.4)}
               initial="hidden"
@@ -131,12 +138,13 @@ function About() {
               bring your digital visions to life. Our team excels in creating
               innovative and effective web solutions tailored to your needs.
             </motion.p>
+            {/* <motion.div */}
             <motion.div
               variants={fadeIn("right", 1.6)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="hidden md:flex md:max-w-[1200px] mx-auto xl:mx-0 mb-8 xl:relative xl:z-20"
+              className="hidden md:flex md:max-w-[1200px] mx-auto mb-8 xl:mx-0 mb-8 xl:relative xl:z-20"
             >
               <div className="flex flex-1 xl:gap-x-6">
                 <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/40 after:absolute after:top-0 after:right-0">
@@ -174,6 +182,7 @@ function About() {
               </div>
             </motion.div>
           </div>
+          {/* <motion.div */}
           <motion.div
             variants={fadeIn("left", 1.4)}
             initial="hidden"
@@ -199,7 +208,7 @@ function About() {
                 );
               })}
             </div>
-            <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+            <div className="py-2 max-md:pb-6 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
               {aboutData[index].info.map((item, itemIndex) => {
                 return (
                   <div

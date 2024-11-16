@@ -24,7 +24,7 @@ function Contacts() {
   return (
     <main className="page-container py-32 h-full overflow-hidden lg:pt-36 lg:pb-28">
             <Galaxy />
-      <div className="mx-auto text-center xl:text-left flex items-center justify-center h-full lg:overflow-y-scroll">
+      <div className="mx-auto max-sm:px-3 text-center xl:text-left md:flex items-center justify-center h-full overflow-y-scroll">
         <div className="flex flex-col w-full lg:h-full xl:h-fit max-w-[700px]">
           <motion.h1
             variants={fadeIn("up", 0.2)}
