@@ -8,10 +8,10 @@ import { fadeIn } from "@/variants";
 
 function Work() {
   return (
-    <main className="h-full py-36 flex overflow-hidden pb-16 items-center md:page-container md:px-32 xl:px-36">
+    <main className="h-full py-36 flex overflow-hidden pb-16 items-center md:page-padding-y">
       <Galaxy />
        <div className="overflow-x-hidden flex max-xl:justify-center flex-col h-full mx-auto">
-        <div className="mx-auto container overflow-y-scroll h-fit">
+        <div className="mx-auto container overflow-y-scroll md:px-32 xl:px-36 h-fit">
           <div className="flex flex-col xl:flex-row gap-x-8 md:pb-5 xl:pb-0">
             <div className="text-center flex flex-col xl:w-[30vw] xl:text-left mb-4 xl:mb-0">
               <motion.h1
