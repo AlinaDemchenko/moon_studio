@@ -7,7 +7,7 @@ import { fadeIn } from "@/variants";
 function Testimonials() {
   return (
     <main className="h-full py-28 md:py-32 text-center overflow-hidden">
-      <div className="page-container pt-0 mx-auto h-full md:flex flex-col justify-center max-xl:overflow-y-scroll">
+      <div className="page-container pt-0 md:pt-7 mx-auto h-full xl:flex flex-col justify-center max-xl:overflow-y-scroll">
         <motion.h1 className="secondary-title xl:mb-0" variants={fadeIn("up", 0.2)} initial="hidden" animate="show" exit="hidden">
           What Clients<span className="text-amber-300"> Say.</span>
         </motion.h1>
