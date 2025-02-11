@@ -82,6 +82,10 @@
   .secondary-title {
     @apply md:text-[54px] mb-4;
   }
+  .vertical-scroll {
+    overflow-y: scroll;
+    /* -webkit-overflow-scrolling: touch; */
+  }
 }
 
 @layer components {
