@@ -100,7 +100,6 @@ function About() {
   return (
     <main className="h-full text-center xl:text-left">
       <Galaxy />
-      {/* <motion.div */}
       {!isMobile && (
         <motion.div
           variants={fadeIn("right", 1.2)}
@@ -112,7 +111,8 @@ function About() {
           <div className="xl:bg-[url('/about-bg.png')] xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute z-0 opacity-60"></div>
         </motion.div>
       )}
-      <div className="page-padding-y xl:pt-36 overflow-hidden pb-16 md:pb-20 h-full w-full">
+      <div className="page-padding-y xl:pt-36 pb-16 md:pb-20 h-full w-full">
+              {/* overflow-hidden */}
         <div className="page-padding-x max-xl:overflow-y-scroll overflow-x-hidden h-full flex flex-col mx-auto items-center xl:flex-row xl:items-start gap-x-6">
           <div className="flex-1 flex-col flex justify-center xl:justify-start xl:h-[480px]">
             {/* <motion.h1 */}

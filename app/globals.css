@@ -37,7 +37,8 @@
 } */
 @layer base {
   body {
-    @apply bg-[rgb(0,0,0)] font-sans text-white overflow-hidden;
+    @apply bg-[rgb(0,0,0)] font-sans text-white;
+    /* overflow-hidden */
   }
 
   h1 {
@@ -81,10 +82,6 @@
   }
   .secondary-title {
     @apply md:text-[54px] mb-4;
-  }
-  .vertical-scroll {
-    overflow-y: scroll;
-    /* -webkit-overflow-scrolling: touch; */
   }
 }
 
