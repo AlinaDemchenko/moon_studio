@@ -11,7 +11,7 @@ function Services() {
     <main className="h-full py-28 md:py-32 flex overflow-hidden pb-16 items-center md:page-padding-y max-md:px-3">
       <Galaxy />
        <div className="overflow-x-hidden h-full mx-auto flex flex-col max-xl:justify-center xl:pt-20">
-        <div className="mx-auto container md:page-padding-x overflow-y-scroll h-fit">
+        <div className="mx-auto container md:page-padding-x overflow-y-auto h-fit">
           <div className="flex flex-col xl:flex-row gap-x-8">
             <div className="text-center flex flex-col xl:w-[30vw] xl:text-left mb-4 xl:mb-0">
               <motion.h1
