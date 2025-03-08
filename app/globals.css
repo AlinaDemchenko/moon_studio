@@ -35,6 +35,32 @@
     --background-end-rgb: 0, 0, 0;
   }
 } */
+
+@media not all and (min-resolution: 0.001dpcm) { 
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 128, 128, 0.6);
+  }
+
+  /* Для Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 128, 128, 0.4) transparent;
+  }
+}
+
 @layer base {
   body {
     @apply bg-[rgb(0,0,0)] font-sans text-white;
