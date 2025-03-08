@@ -35,8 +35,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 } */
-
-@media not all and (min-resolution: 0.001dpcm) { 
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -54,12 +52,10 @@
     background: rgba(128, 128, 128, 0.6);
   }
 
-  /* Для Firefox */
   html {
     scrollbar-width: thin;
     scrollbar-color: rgba(128, 128, 128, 0.4) transparent;
   }
-}
 
 @layer base {
   body {
